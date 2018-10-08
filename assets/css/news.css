@@ -1,0 +1,64 @@
+.news_field{
+    width: 75%;
+}
+
+.news{
+    width: 50%;
+    text-align: center;
+    padding-left: 2%;
+}
+
+.news h2{
+    text-align: left;
+    font-size: .7em;
+     
+}
+
+.news h3{
+    text-align: left;
+    font-size: .6em;
+    line-height: 0.7em;
+    
+}
+
+.news h4{
+    text-align: left;
+    font-size: .5em;
+     
+}
+
+.news > .news_topic{
+    margin: 0;
+    width: 100%;
+}
+
+.news > .news_topic > .\33 0x30{
+    float: left;
+    width: 51px;
+    height: 51px;
+    font-size: 40%;
+    text-align: center;
+    /* padding: 2%; */
+}
+
+.news > .\34 50x150{
+    display: block;
+    text-align: center;
+    width: 450px;
+    height: 150px;
+    border: dotted;
+}
+
+
+
+.news > .news_topic > a{
+    width: 90%;
+}
+
+.news_field > .news:nth-child(odd){
+    float: left;
+}
+
+.news_field > .news:nth-child(even){
+    float: right;
+}

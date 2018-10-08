@@ -18,10 +18,6 @@ body{
     line-height: 1.25em;
 }
 
-img{
-    width: auto;
-}
-
 h1{
     text-transform: uppercase;
     margin: 0.4em 0 0 0.1em;
@@ -49,6 +45,7 @@ p {
 
 #header{
     position: fixed;
+    border: dotted 1px;
     margin: 0;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -59,44 +56,36 @@ p {
     background-color: #c7c6c254;
     z-index: 10000;
 }
-.menu {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    position: relative;
-    flex-flow: row wrap;
-    justify-content: space-between;
+#header li {
+    display: inline-block;
 }
 
-.menu_item a{
-    display: block;
-    padding: 7% 0%;
+#header li > ul{
+    display: none;       
 }
 
-.menu_item{
-    margin: auto;
-    padding: auto;
-    height: 1%;
+nav{
+    text-align: right;
+    padding: 3px;
 }
 
-.drop_menu li ul {
-    display: none;
-    width: 20%;
-    position: absolute;
-    list-style-type: none;
-    background-color: #c7c6c2;
-    margin: 0;
-    flex-flow: column wrap;
-    align-items: flex-start;
-}
-        
-.drop_menu li:hover > ul {
-    display: flex;
-    border: dotted;
+#header nav ul li {
+    margin-right: 5%;
 }
 
 /* Logo */
+.sitename{        
+    float: left;
+    line-height: 1em;
+     
+}
 
+.sitename::after, .sitename::after {
+    clear: both;
+    content: '';
+    display: block;
+    clear: both;
+}
 
 /* Banner */
 
@@ -124,7 +113,7 @@ p {
 } 
 
 #banner {
-    padding: 0%;
+    padding: 5%;
     margin: 103px 0 0;    
     display: inline-block;
     border: dotted;
@@ -245,7 +234,7 @@ header.special .icon:before {
 }
 
 /*News*/
-
+/* 
 header.salt img{
     text-align: center;
     display: inline-block;
@@ -292,38 +281,47 @@ footer.gimmimire ul li > a {
     height: 0;
 } 
 
-/* reason */
-
-.colom{
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 100%;
-    margin: 0 auto;
-}
-
 .colom3u {
     border-bottom: solid 1px transparent;
     box-sizing: border-box;
-    flex: 1 1 20%;
-    margin: 5px;
-    min-width: 270px;
-    padding: 1% 1%;
-    text-align: center;
 }
 
 .colom3u > * {
-        box-sizing: border-box;
+    float: left;
+    box-sizing: border-box;
 }
 
-
+.colom3u:after, .colom3ulast:before {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+}
 
 .reason > h2{
     text-align: center;
 }
 
+.colom3u {
+    text-align: center;
+    float: left;
+    box-sizing: border-box;
+    width: 25%;
+    padding: 0 25px;
+}
+.colom3ulast{
+    text-align: center;
+    float: right;
+    width:25%;
+    padding: 0 25px;
+}
 
-
-
+.colom3ulast:after, .colom3u:before {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+}
 
 colom3u icon.featured{
     cursor: default;
@@ -339,7 +337,7 @@ colom3u icon.featured{
 
 .colom3ulast p{
     font-size: 13pt;
-}
+} */
 
 /* Footer */
 .copyright{
